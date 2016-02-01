@@ -30,6 +30,12 @@ module.exports = {
       test: /\.jsx?$/,
       loaders: ['babel'],
       exclude: /node_modules/
+    }, {
+      test: /\.css$/,
+      loader: 'style!css?modules&&importLoaders=1&localIdentName=[name]---[local]---[hash:base64:5]!postcss'
     }]
-  }
+  },
+  postcss: [
+    require('postcss-modules-values')
+  ]
 };
