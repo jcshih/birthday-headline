@@ -1,3 +1,37 @@
 .form {
+  width: 500px;
+  margin: 30px auto;
+  padding: 10px;
   text-align: center;
+  background-color: #dddddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.birthdayInput {
+  margin: 10px;
+}
+
+input[type='text'] {
+  font-size: 16px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #6496c8;
+}
+
+.button:hover {
+  background-color: #346392;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:disabled {
+  background-color: #6496c8;
 }
