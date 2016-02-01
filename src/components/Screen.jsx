@@ -1,14 +1,18 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
 import style from './Screen.css';
+import HeadlineScreen from './HeadlineScreen.jsx';
+import LoadingScreen from './LoadingScreen.jsx';
 
-class Screen extends Component {
-  render() {
-    return (
-      <div className={style.screen}>
-        Screen
-      </div>
-    );
-  }
-}
+const Screen = (props) => {
+  return (
+    <div className={style.screen}>
+      {props.isFetching ? <LoadingScreen/> : <HeadlineScreen/>}
+    </div>
+  );
+};
+
+Screen.propTypes = {
+  isFetching: PropTypes.bool.isRequired
+};
 
 export default Screen;
