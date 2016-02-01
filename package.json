@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack --config webpack.config.prod.js --progress --profiles --colors",
+    "build": "NODE_ENV=production webpack --config webpack.config.prod.js --progress --profiles --colors",
     "lint": "eslint src"
   },
   "author": "Jonathan Shih",
