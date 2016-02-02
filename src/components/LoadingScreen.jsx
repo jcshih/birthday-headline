@@ -4,7 +4,9 @@ import style from './LoadingScreen.css';
 const LoadingScreen = (props) => {
   return (
     <div className={style.loadingScreen}>
-      LoadingScreen
+      <div className={style.loaderWrapper}>
+        <div className={style.loader}></div>
+      </div>
     </div>
   );
 };
