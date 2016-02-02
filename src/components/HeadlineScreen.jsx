@@ -4,7 +4,9 @@ import style from './HeadlineScreen.css';
 const HeadlineScreen = (props) => {
   return (
     <div className={style.headlineScreen}>
-      HeadlineScreen
+      {props.headlineUrl ?
+       <div className={style.headline}><img src={props.headlineUrl}/></div> :
+       null}
     </div>
   );
 };

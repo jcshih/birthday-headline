@@ -1,4 +1,12 @@
 .headlineScreen {
-  background-color: yellow;
+  background-color: #9BCFAB;
   height: 100%;
+  position: relative;
+}
+
+.headline {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

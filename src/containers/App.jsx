@@ -25,16 +25,15 @@ class App extends Component {
   }
 
   onGetHeadlineClick() {
-    console.log('onGetHeadlineClick');
     const { actions } = this.props;
     actions.fetchHeadline();
   }
 
   render() {
-    const { isFetching } = this.props.headline;
+    const { isFetching, headlineUrl } = this.props.headline;
     return (
       <div className={style.app}>
-        <Screen isFetching={isFetching}/>
+        <Screen isFetching={isFetching} headlineUrl={headlineUrl}/>
         <Form handleGetHeadlineClick={this.onGetHeadlineClick}
               isFetching={isFetching}/>
       </div>

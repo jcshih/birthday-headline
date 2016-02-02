@@ -6,7 +6,9 @@ import LoadingScreen from './LoadingScreen.jsx';
 const Screen = (props) => {
   return (
     <div className={style.screen}>
-      {props.isFetching ? <LoadingScreen/> : <HeadlineScreen/>}
+      {props.isFetching ?
+       <LoadingScreen/> :
+       <HeadlineScreen headlineUrl={props.headlineUrl}/>}
     </div>
   );
 };
