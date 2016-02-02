@@ -8,7 +8,7 @@ const fetchHeadline = () => {
 
     return setTimeout(() => dispatch({
       type: h.RECIEVE_HEADLINE,
-      headlineUrl: 'image url'
+      headlineUrl: '/static/headline.png'
     }), Math.random() * 2000 + 1000);
   };
 };
